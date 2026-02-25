@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-bg-dark: #0A0A0F;
+  --color-bg-card: #111122;
+  --color-primary-start: #7F00FF;
+  --color-primary-end: #00C6FF;
+  --color-accent-glow: rgba(138, 43, 226, 0.4);
+}
+
+@layer base {
+  body {
+    @apply bg-bg-dark text-white font-sans antialiased selection:bg-primary-start/30;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(127, 0, 255, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(0, 198, 255, 0.1) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(138, 43, 226, 0.05) 0%, transparent 60%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-bg-card/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .glow-border {
+    @apply relative;
+  }
+
+  .glow-border::after {
+    content: '';
+    @apply absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500;
+    background: linear-gradient(45deg, var(--color-primary-start), var(--color-primary-end));
+    z-index: -1;
+  }
+
+  .glow-border:hover::after {
+    @apply opacity-40;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-start to-primary-end;
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-primary-start to-primary-end rounded-full font-semibold 
+           transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-primary-start/20
+           hover:shadow-primary-start/40 flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 bg-white/5 border border-white/10 rounded-full font-semibold 
+           transition-all duration-300 hover:bg-white/10 flex items-center justify-center gap-2;
+  }
+
+  .section-anchor {
+    @apply scroll-mt-32;
+  }
+
+  /* Cocolang Syntax Highlighting */
+  .token-keyword { @apply text-purple-400 font-bold; }
+  .token-type { @apply text-blue-400; }
+  .token-string { @apply text-green-400; }
+  .token-comment { @apply text-gray-500 italic; }
+  .token-function { @apply text-yellow-400; }
+  .token-operator { @apply text-primary-end; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
