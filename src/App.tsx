@@ -7,11 +7,13 @@ import Features from "./components/Features";
 import CTA from "./components/CTA";
 import WhyCocolang from "./components/WhyCocolang";
 import { ToastProvider } from "./components/Toast";
+import DeveloperCredit from "./components/DeveloperCredit";
 
 function HomePage() {
   return (
     <>
       <Hero />
+      <DeveloperCredit />
       <HowItWorks />
       <Generator />
       <Features />
