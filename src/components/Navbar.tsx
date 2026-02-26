@@ -25,7 +25,7 @@ export default function Navbar() {
               <Hexagon className="w-5 h-5 md:w-6 md:h-6 text-white" />
             </div>
             <span className="text-lg md:text-xl font-bold tracking-tight">
-              Cocolang <span className="gradient-text">AI</span>
+              Cocolang <span className="gradient-text">AI Copilot</span>
             </span>
           </Link>
 

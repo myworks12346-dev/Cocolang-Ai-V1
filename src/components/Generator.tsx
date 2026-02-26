@@ -79,9 +79,10 @@ export default function Generator() {
         setCode(cleanCode(fullText));
       }
       showToast("Contract generated successfully!", "success");
-    } catch (error) {
+    } catch (error: any) {
       console.error("Generation failed:", error);
-      showToast("Failed to generate contract. Please check your connection.", "error");
+      const msg = error.message || "Failed to generate contract. Please check your connection.";
+      showToast(msg, "error");
     } finally {
       setIsGenerating(false);
     }

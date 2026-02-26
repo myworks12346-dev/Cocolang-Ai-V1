@@ -42,11 +42,11 @@ export default function App() {
                 <div className="w-8 h-8 rounded bg-gradient-to-br from-primary-start to-primary-end flex items-center justify-center">
                   <span className="text-white font-bold text-xs">C</span>
                 </div>
-                <span className="font-bold">Cocolang AI</span>
+                <span className="font-bold">Cocolang AI Copilot</span>
               </div>
               
               <p className="text-gray-500 text-sm">
-                © {new Date().getFullYear()} Cocolang AI. Built for the MOI Ecosystem.
+                © {new Date().getFullYear()} Cocolang AI Copilot. Built for the MOI Ecosystem.
               </p>
 
               <div className="flex gap-6">

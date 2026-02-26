@@ -12,7 +12,7 @@ export default function WhyCocolang() {
           className="text-center mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Why <span className="gradient-text">Cocolang AI?</span>
+            Why <span className="gradient-text">Cocolang AI Copilot?</span>
           </h1>
           <p className="text-gray-400 text-xl max-w-2xl mx-auto leading-relaxed">
             Building on MOI should feel powerful — not confusing. 
@@ -23,13 +23,13 @@ export default function WhyCocolang() {
         {/* Exists Section */}
         <section className="mb-24">
           <div className="glass-card p-10 glow-border">
-            <h2 className="text-3xl font-bold mb-6">Why Cocolang AI Exists</h2>
+            <h2 className="text-3xl font-bold mb-6">Why Cocolang AI Copilot Exists</h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
               Smart contracts are the backbone of blockchain innovation. 
               But writing them manually is slow, error-prone, and intimidating — especially when working with a specialized language like Cocolang.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Cocolang AI removes that friction. It transforms plain English into secure, structured, production-ready Cocolang contracts — instantly.
+              Cocolang AI Copilot removes that friction. It transforms plain English into secure, structured, production-ready Cocolang contracts — instantly.
             </p>
           </div>
         </section>
@@ -87,7 +87,7 @@ export default function WhyCocolang() {
           <div className="glass-card p-10 bg-gradient-to-br from-primary-start/5 to-primary-end/5 border-primary-start/20">
             <h2 className="text-3xl font-bold mb-6">Our Solution</h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              Cocolang AI is a purpose-built AI assistant designed specifically for the MOI ecosystem.
+              Cocolang AI Copilot is a purpose-built AI assistant designed specifically for the MOI ecosystem.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
@@ -118,7 +118,7 @@ export default function WhyCocolang() {
               <div>
                 <h3 className="text-xl font-bold mb-2">1. Domain-Specific Intelligence</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Cocolang AI is constrained and optimized for MOI architecture. It doesn’t guess, mix ecosystems, or hallucinate irrelevant syntax. It generates contracts the way MOI expects them.
+                  Cocolang AI Copilot is constrained and optimized for MOI architecture. It doesn’t guess, mix ecosystems, or hallucinate irrelevant syntax. It generates contracts the way MOI expects them.
                 </p>
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function WhyCocolang() {
               The Bigger Vision
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              Cocolang AI is more than a generator. It is the foundation for AI-native blockchain development, faster MOI adoption, and safer contract standards.
+              Cocolang AI Copilot is more than a generator. It is the foundation for AI-native blockchain development, faster MOI adoption, and safer contract standards.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               <div className="p-4 rounded-lg bg-white/5 border border-white/10">AI-native development</div>
